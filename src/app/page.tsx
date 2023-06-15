@@ -4,9 +4,9 @@ import Hero from "./Components/Hero/Hero";
 export default function Home() {
   return (
     <>
-      <div className="bg-steve">
+      <div className="">
         <Header />
-        <div className=" flex  w-full h-screen ">
+        <div className=" flex  w-full h-screen bg">
           <Hero />
         </div>
       </div>

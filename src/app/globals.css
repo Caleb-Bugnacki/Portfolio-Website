@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.bg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../public/CalebBugnacki.jpg);
+  top: 0;
+  bottom: 0;
+  background-position-x: right;
+}
