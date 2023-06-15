@@ -16,9 +16,9 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
       },
       backgroundImage: {
-        steve: "url('/stevejobs.jpeg')",
+        steve: "url('/stevejobs.jpg')",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
