@@ -8,14 +8,14 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar bg-base-100 px-6">
+      <div className="navbar fixed bg-base-100/0 px-6">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl font-bold">
             Caleb Bugnacki
           </a>
         </div>
 
-        <div className="flex-none  ">
+        <div className=" flex-row  content-end">
           {showSidebar ? (
             <button
               className="flex text-3xl text-white items-center cursor-pointer fixed right-6 top-3.5 z-50 font-poppins hover:border-2 rounded-md p-1 "

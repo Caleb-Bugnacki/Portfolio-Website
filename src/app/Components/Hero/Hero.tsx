@@ -3,7 +3,7 @@ import React from "react";
 function Hero() {
   return (
     <>
-      <div className="  flex  relative inset-y-3 ">
+      <div className=" flex relative  ">
         <div className="flex flex-col mx-10 leading-10 justify-center">
           <h3 className="text-slate-500 text-md font-poppins uppercase drop-shadow-md">
             Caleb Bugnacki
