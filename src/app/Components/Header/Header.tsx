@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { CiTwitter } from "react-icons/ci";
+import Link from "next/link";
 
 const Header = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -10,9 +11,12 @@ const Header = () => {
     <>
       <div className="navbar fixed bg-base-100/0 px-6">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl font-bold">
+          <Link
+            href="/"
+            className="btn btn-ghost normal-case text-xl font-bold font-poppins"
+          >
             Caleb Bugnacki
-          </a>
+          </Link>
         </div>
 
         <div className=" flex-row  content-end">
@@ -47,17 +51,21 @@ const Header = () => {
             className={` flex flex-col h-screen w-screen  top-0 right-0 sm:w-[35vw] bg-gradient-to-bl from-gray-500/70 to-gray-200/70  trasnparent p-10 pl-20 text-white fixed sm:h-full z-40  ease-in-out duration-300 ${
               showSidebar ? "translate-x-0 " : "translate-x-full"
             }`}
+            id="sidebarContainer"
           >
             <div className=" flex-auto opacity-100">
-              <ul className="mt-20 text-4xl text-center font-bold leading-10 font-poppins text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+              <ul
+                className="mt-20 text-4xl text-center font-bold leading-10 font-poppins text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+                onClick={() => setShowSidebar(!showSidebar)}
+              >
                 <li className="py-3 hover:underline decoration-from-font  ">
-                  <a href="#">Home</a>
+                  <Link href="/">Home</Link>
                 </li>
                 <li className="py-3 hover:underline decoration-from-font">
-                  <a href="#">Projects</a>
+                  <Link href="/projects">Projects</Link>
                 </li>
                 <li className="py-3 hover:underline decoration-from-font">
-                  <a href="#">About Me</a>
+                  <Link href="/about">About Me</Link>
                 </li>
                 <li className="py-3 hover:underline decoration-from-font">
                   <a href="#">Contact</a>

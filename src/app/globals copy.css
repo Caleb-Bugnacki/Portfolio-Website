@@ -11,3 +11,9 @@
   bottom: 0;
   background-position-x: right;
 }
+<style global tsx>
+   {`
+       html {
+          scroll-behavior: smooth;
+        }
+  `}
