@@ -1,10 +1,11 @@
 import React from "react";
 import MouseScrollAnimation from "../Components/MouseScrollAnimation/MouseScrollAnimation";
+import Experience from "../Components/Experience/Experience";
 
 export default function About() {
   return (
     <>
-      <div className="flex flex-col h-screen w-full justify-center items-center px-6 pt-14 leading-10">
+      <div className="flex flex-col h-screen w-full justify-center items-center px-6 pt-14 leading-10 ">
         <h2 className="uppercase font-bold font-poppins text-slate-400 text-center text-xl">
           a few words about me
         </h2>
@@ -57,6 +58,9 @@ export default function About() {
             Keywords: MBSE, SysML, Cameo Systems Modeler, Defense Sector
           </h1>
         </div>
+      </div>
+      <div className="flex w-full h-screen">
+        <Experience />
       </div>
     </>
   );

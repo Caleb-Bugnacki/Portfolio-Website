@@ -33,7 +33,7 @@ function Carasoul() {
   }, [activeItem]);
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="  mx-auto p-4 flex flex-col justify-center  ">
       <div className="w-[1536px] max-w-full">
         <ul
           ref={wrapperRef}
@@ -54,10 +54,12 @@ function Carasoul() {
             >
               <div className="relative h-full w-full overflow-hidden rounded-2xl bg-[#c9c6c7]">
                 <Image
-                  className="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                  className="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
                   src={project.img}
-                  width={590}
-                  height={640}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "100%" }}
                   alt={project.name}
                 />
                 <div
@@ -68,14 +70,14 @@ function Carasoul() {
                 />
                 <div
                   className={classNames(
-                    "left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:p-0",
+                    "left-[-24px] top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:p-0",
                     activeItem === index
                       ? "md:translate-x-0 md:opacity-100"
                       : "md:translate-x-4 md:opacity-0"
                   )}
                 >
                   <p className="text-sm uppercase text-primary md:text-lg"></p>
-                  <p className="text-lg font-bold md:text-4xl text-white">
+                  <p className="text-lg font-bold md:text-4xl text-white ">
                     {project.name}
                   </p>
                 </div>

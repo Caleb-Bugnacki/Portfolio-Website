@@ -9,11 +9,15 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar fixed bg-base-100/0 px-6">
-        <div className="flex-1">
+      <div
+        className={`navbar bg-base-100/0 px-6 z-50 ${
+          showSidebar ? "absolute" : "fixed"
+        }`}
+      >
+        <div className="flex-1 ">
           <Link
             href="/"
-            className="btn btn-ghost normal-case text-xl font-bold font-poppins"
+            className="btn btn-ghost normal-case text-xl font-bold font-poppins bg-white"
           >
             Caleb Bugnacki
           </Link>
@@ -48,12 +52,12 @@ const Header = () => {
             </button>
           )}
           <div
-            className={` flex flex-col h-screen w-screen  top-0 right-0 sm:w-[35vw] bg-gradient-to-bl from-gray-500/70 to-gray-200/70  trasnparent p-10 pl-20 text-white fixed sm:h-full z-40  ease-in-out duration-300 ${
+            className={` flex flex-col h-screen w-screen   top-0 right-0 sm:w-[35vw] bg-gradient-to-bl from-gray-500/70 to-gray-200/70   p-10 pl-20 text-white fixed sm:h-full z-40  ease-in-out duration-300 ${
               showSidebar ? "translate-x-0 " : "translate-x-full"
-            }`}
+            } `}
             id="sidebarContainer"
           >
-            <div className=" flex-auto opacity-100">
+            <div className=" flex-auto  opacity-100">
               <ul
                 className="mt-20 text-4xl text-center font-bold leading-10 font-poppins text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
                 onClick={() => setShowSidebar(!showSidebar)}
@@ -68,7 +72,7 @@ const Header = () => {
                   <Link href="/about">About Me</Link>
                 </li>
                 <li className="py-3 hover:underline decoration-from-font">
-                  <a href="#">Contact</a>
+                  <Link href="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
