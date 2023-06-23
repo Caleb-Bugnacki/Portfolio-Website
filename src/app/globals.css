@@ -3,6 +3,9 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+* {
+  font-family: Poppins;
+}
 .bg {
   background-size: contain;
   background-repeat: no-repeat;
@@ -10,4 +13,16 @@
   top: 0;
   bottom: 0;
   background-position-x: right;
+}
+.bg2 {
+  background-size: 50%;
+
+  background-image: url(../../public/contactbg.jpg);
+  top: 0;
+  bottom: 0;
+}
+.project1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../public/comingSoon.png);
 }

@@ -2,6 +2,7 @@
 import React from "react";
 import { useLottie } from "lottie-react";
 import mouseScroll from "../../../../public/mouseScrollAnimation.json";
+import ScrollLink from "../ScrollLink";
 
 const style = {
   height: 50,

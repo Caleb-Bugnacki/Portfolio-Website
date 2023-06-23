@@ -1,6 +1,5 @@
 import React from "react";
 
-import html from "../../../../public/html.png";
 import MBSE from "../../../../public/MBSE.png";
 import javascript from "../../../../public/javascript.png";
 import reactImage from "../../../../public/react.png";
@@ -72,79 +71,32 @@ const Experience = () => {
       style: "shadow-gray-400",
     },
   ];
-  const techs2 = [
-    {
-      id: 1,
-      title: "C++",
-      style: "shadow-blue-300",
-    },
-    {
-      id: 2,
-      title: "AWS",
-      style: "shadow-orange-300",
-    },
-
-    {
-      id: 3,
-      title: "JavaScript",
-      style: "shadow-yellow-500",
-    },
-    {
-      id: 4,
-      title: "TypeScript",
-      style: "shadow-blue-500",
-    },
-    {
-      id: 5,
-      title: "Next JS",
-      style: "shadow-gray-900",
-    },
-    {
-      id: 6,
-      title: "React",
-      style: "shadow-blue-600",
-    },
-    {
-      id: 7,
-      title: "Tailwind",
-      style: "shadow-sky-400",
-    },
-
-    {
-      id: 8,
-
-      title: "MBSE",
-      style: "shadow-yellow-600",
-    },
-
-    {
-      id: 9,
-
-      title: "GitHub",
-      style: "shadow-gray-400",
-    },
-  ];
 
   return (
-    <div className=" w-full h-screen px-10">
+    <div className=" w-full h-full md:h-screen px-10">
       <div className=" mx-auto py-4 flex flex-col justify-center w-full h-full ">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 py-2 inline">
+          <p
+            className="text-4xl font-bold border-b-4 border-gray-500 py-2 inline"
+            id="Experience"
+          >
             Experience
           </p>
-          <p className="py-6">
-            These are some of the technologies I've worked with
+          <p className="py-6 text-lg">
+            These are some of the technologies I've worked with.
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center  py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center  py-8 md:px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`flex flex-col shadow-md hover:scale-105 duration-500 py-2 justify-center items-center rounded-lg ${style}`}
+              className={`flex flex-col shadow-md hover:scale-105 duration-500 py-2 justify-center items-center rounded-lg  ${style}`}
             >
               <Image src={src} alt="" className="w-20 mx-auto" />
-              <p className="mt-4 align-text-bottom">{title}</p>
+              <p className="mt-4 align-text-bottom dark:text-white font-semibold  text-xl">
+                {title}
+              </p>
             </div>
           ))}
         </div>

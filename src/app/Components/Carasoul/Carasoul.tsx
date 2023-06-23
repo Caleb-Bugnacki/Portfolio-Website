@@ -21,7 +21,7 @@ function Carasoul() {
       "600ms cubic-bezier(0.22, 0.61, 0.36, 1)"
     );
 
-    timeoutRef.current = setTimeout(() => {
+    timeoutRef.current = window.setTimeout(() => {
       wrapperRef.current?.style.removeProperty("--transition");
     }, 900);
 
@@ -34,7 +34,7 @@ function Carasoul() {
 
   return (
     <div className="  mx-auto p-4 flex flex-col justify-center  ">
-      <div className="w-[1536px] max-w-full">
+      <div className="w-auto max-w-full">
         <ul
           ref={wrapperRef}
           className="group flex flex-col gap-3 md:h-[640px] md:flex-row md:gap-[1.5%]"
@@ -76,9 +76,11 @@ function Carasoul() {
                       : "md:translate-x-4 md:opacity-0"
                   )}
                 >
-                  <p className="text-sm uppercase text-primary md:text-lg"></p>
                   <p className="text-lg font-bold md:text-4xl text-white ">
                     {project.name}
+                  </p>
+                  <p className="text-sm uppercase md:text-lg text-white ">
+                    {project.description}
                   </p>
                 </div>
               </div>

@@ -10,14 +10,14 @@ const Header = () => {
   return (
     <>
       <div
-        className={`navbar bg-base-100/0 px-6 z-50 ${
+        className={`navbar bg-base-100/0 md:px-6 z-50 bg-white bg-opacity-50 md:bg-transparent ${
           showSidebar ? "absolute" : "fixed"
         }`}
       >
         <div className="flex-1 ">
           <Link
             href="/"
-            className="btn btn-ghost normal-case text-xl font-bold font-poppins bg-white"
+            className="btn btn-ghost normal-case text-xl font-bold font-poppins scroll:bg-white"
           >
             Caleb Bugnacki
           </Link>
