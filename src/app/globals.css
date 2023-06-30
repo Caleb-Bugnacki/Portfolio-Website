@@ -21,8 +21,11 @@
   top: 0;
   bottom: 0;
 }
-.project1 {
+.bg3 {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../../public/comingSoon.png);
+  background-image: url(../../public/projectConstruction.jpeg);
+  top: 0;
+  bottom: 0;
+  background-position-x: right;
 }

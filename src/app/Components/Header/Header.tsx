@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { CiTwitter } from "react-icons/ci";
 import Link from "next/link";
@@ -10,7 +11,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`navbar bg-base-100/0 md:px-6 z-50 bg-white bg-opacity-50 md:bg-transparent ${
+        className={` navbar bg-base-100/0 md:px-6 z-50 bg-white bg-opacity-50 md:bg-transparent ${
           showSidebar ? "absolute" : "fixed"
         }`}
       >

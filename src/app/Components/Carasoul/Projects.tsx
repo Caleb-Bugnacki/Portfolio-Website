@@ -3,8 +3,7 @@ export const projects = [
     id: 1,
     name: "My Project",
     img: "/../public/comingSoon.png",
-    description: "lThis is a project I am working on!",
-    style: "project1",
+    description: "This is a project I am working on!",
   },
   {
     id: 2,
